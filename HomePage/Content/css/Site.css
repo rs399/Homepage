@@ -1,0 +1,63 @@
+﻿html, body {
+    height: 100%;
+}
+footer {
+    color: #666;
+    background: #222;
+    padding: 17px 0 18px 0;
+    border-top: 1px solid #000;    
+}
+footer a {
+    color: #999;
+}
+footer a:hover {
+    color: #efefef;
+}
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -63px;
+}
+.push {
+    height: 63px;
+}
+/* not required for sticky footer; just pushes hero down a bit */
+.wrapper > .container {
+    padding-top: 60px;
+}
+
+/* responsive footer fix by Aalaap Ghag */
+@media (max-width: 767px) {
+    body {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    
+    footer, .wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.container {
+    max-width: 940px;
+}
+/* ------------- BEGIN BOOTSTRAP OVERRIDES ------------- */
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+.navbar-default {
+    background-color: #F8F8F8;
+    border-color: #E7E7E7;
+}/* ------------- END BOOTSTRAP OVERRIDES ------------- */
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
